@@ -12,7 +12,7 @@ El curso busca que aprendan a desarrollar y a diseñar circuitos con [sistemas e
 * Un entorno de desarrollo: *Arduino IDE* o *Visual Studio Code*.
 * Diversos componentes electrónicos.
 
-[ESP32](C:\Users\FABLAB\Documents\proyectos\sitio_web_embebidos_cfp8\web_embebidos_cfp8\assets\img\01_intro.jpg)
+![ESP32](C:\Users\FABLAB\Documents\proyectos\sitio_web_embebidos_cfp8\web_embebidos_cfp8\assets\img\01_intro.jpg)
 
 Aprendiendo a dominar estas herramientas, van a poder terminar el curso cumpliendo los siguientes objetivos:
 * Entender código, modificar código ya escrito y desarrollar código nuevo en Arduino IDE y en Visual Studio Code.
