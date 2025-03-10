@@ -2,15 +2,17 @@
 layout: default
 ---
 
-#Bienvenidos al curso!
+#**Bienvenidos al curso!**
 
-Este sitio tiene como objetivo complementar las clases presenciales del curso. La idea es que sea un material de apoyo y consulta constante, tando durante como después del curso. Antes de empezar, les recomiendo leer este fragmento.
+Este sitio tiene como objetivo complementar las clases presenciales del curso. La idea es que sea un material de apoyo y consulta constante, tanto durante como después del curso. Antes de empezar, les recomiendo leer este fragmento.
 
 El curso busca que aprendan a desarrollar y a diseñar circuitos con [sistemas embebidos](https://www.youtube.com/watch?app=desktop&v=dFu4t5yGKfI) a partir de los siguientes elementos:
 
-* Una placa de desarrollo: Arduino o *ESP32*. (FOTO)
-* Un entorno de desarrollo: *Arduino IDE* o *Visual Studio Code*. (FOTO)
-* Diversos componentes electrónicos. (FOTO)
+* Una placa de desarrollo: Arduino o *ESP32*.
+* Un entorno de desarrollo: *Arduino IDE* o *Visual Studio Code*.
+* Diversos componentes electrónicos.
+
+[ESP32](C:\Users\FABLAB\Documents\proyectos\sitio_web_embebidos_cfp8\web_embebidos_cfp8\assets\img\01_intro.jpg)
 
 Aprendiendo a dominar estas herramientas, van a poder terminar el curso cumpliendo los siguientes objetivos:
 * Entender código, modificar código ya escrito y desarrollar código nuevo en Arduino IDE y en Visual Studio Code.
