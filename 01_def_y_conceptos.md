@@ -417,7 +417,7 @@ El Arduino, como todo componente, está conformado de distintas partes como son 
 
 ## Puertos en ESP32
 
-![componentes](./assets/img/27_1raParte.jpg)
+![componentes](./assets/img/27_1raParte.JPG)
 
 * 18 canales de conversión analógico-digital (ADC)
 * 10 GPIO de detección capacitiva
