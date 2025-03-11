@@ -180,7 +180,7 @@ Para subir el código a la placa presiona el siguiente botón. Si no hay ningún
 
 Después de compilar y cargar el código notarás como parpadea el LED incluido en el **Arduino UNO**.
 
-_PlatformIO_ adjunta automáticamente la línea #include **<Arduino.h>**. Esta sentencia es la encargada de poner a disposición del usuario las funciones principales del entorno _Arduino_, pero recuerda incluirla si creas el proyecto de forma manual.
+_PlatformIO_ adjunta automáticamente la línea #include _Arduino.h_. Esta sentencia es la encargada de poner a disposición del usuario las funciones principales del entorno _Arduino_, pero recuerda incluirla si creas el proyecto de forma manual.
 
 ### Si queremos programar una placa ESP32...
 
