@@ -230,19 +230,19 @@ void loop()
 
 Para empezar, se declara la variable **LED** como constante. En la parte de configuración **void setup()** se indica el PIN 5 como salida digital y se inicializa el puerto serie en _9600 baudios_. Después, se enciende y apaga el LED con un retardo de 1 segundo. También se envía el mensaje _Encendido_ y _apagado_ por el puerto serie con el mismo retardo. El conexionado del circuito es el siguiente:
 
-[componentes](./assets/img/19_1raParte.png)
+![componentes](./assets/img/19_1raParte.png)
 
 Después de verificar, compilar y cargar el código, notarás el típico parpadeo del LED configurado. Para abrir el monitor serie debes presionar el siguiente botón:
 
-[componentes](./assets/img/20_1raParte.png)
+![componentes](./assets/img/20_1raParte.png)
 
 Puede SER que la velocidad en baudios del monitor serial no coincida con la velocidad que el ESP32 envía los datos por el puerto serie. Para solucionar el inconveniente debes modificar la velocidad en el archivo _platformio.ini_ en la sentencia **monitor_speed**.
 
-[componentes](./assets/img/21_1raParte.png)
+![componentes](./assets/img/21_1raParte.png)
 
 También puede suceder que tengas conectados varios dispositivos al puerto serie. Por eso, procede con las siguientes instrucciones:
 
-[componentes](./assets/img/22_1raParte.png)
+![componentes](./assets/img/22_1raParte.png)
 
 1. Elige el puerto correcto según corresponda..
 2. En esta parte, verás la información enviada por el ESP32.
@@ -280,7 +280,7 @@ Desde un punto de vista práctico, podemos considerar las variables como los caj
 
 El lenguaje de Arduino maneja los siguientes tipos de variables:
 
-[componentes](./assets/img/23_1raParte.png)
+![componentes](./assets/img/23_1raParte.png)
 
 En el lenguaje de Arduino cuando queremos utilizar una variable primero hay que declarar el tipo de variable de la que se trata (por ejemplo _int_ y luego el nombre que le queremos dar a esa variable, **testVariable** en los ejemplos de la tabla anterior).
 
@@ -298,7 +298,7 @@ Lo más aconsejable es inicializar siempre nuestras variables en el momento de d
 
 Veamos el típico sketch que hace parpadear un LED activado a través de un pin:
 
-[componentes](./assets/img/24_1raParte.png)
+![componentes](./assets/img/24_1raParte.png)
 
 El uso de variables nos permite reutilizar este código para otro pin con tan sólo cambiar la asignación inicial de la variable **LEDpin**.
 
@@ -395,7 +395,7 @@ En este punto podés preguntarte que sucede con el ámbito de las variables en e
 
 La siguiente figura ilustra este concepto:
 
-[componentes](./assets/img/25_1raParte.jpg)
+![componentes](./assets/img/25_1raParte.jpg)
 
 El valor de la variable **_varA_** puede ser accedido desde las funciones **_funciónA_**, **_funciónB_** y **_funciónC_** es decir, es una variable global. En cambio las variables **_varB_** y **_varC_** son variables locales. El valor de la variable **_varB_** sólo puede ser accedido desde las funciones **_funciónB_** y **_funciónC_**, mientras que la variable local **_varC_** sólo puede ser leída desde la función **_funciónC_**.
 
