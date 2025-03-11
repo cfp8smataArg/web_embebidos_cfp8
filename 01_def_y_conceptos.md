@@ -413,11 +413,11 @@ El Arduino, como todo componente, está conformado de distintas partes como son 
 
 * **Comunicación**: En este curso, la comunicación del Arduino será mediante _USB_ para cargar los programas o enviar/recibir datos. Sin embargo, no es la única forma que tiene Arduino de comunicarse. Cuando insertamos un módulo externo, este se comunica con nuestra placa utilizando los pines _ICSP_ (comunicación ISP), los pines 10 a 13 (también usados para comunicación ISP), los pines TX/RX o cualquiera de los digitales ya que son capaces de configurarse como pines de entrada o salida y recibir o enviar pulsos digitales.
 
-[componentes](./assets/img/26_1raParte.jpg)
+![componentes](./assets/img/26_1raParte.jpg)
 
 ## Puertos en ESP32
 
-[componentes](./assets/img/27_1raParte.jpg)
+![componentes](./assets/img/27_1raParte.jpg)
 
 * 18 canales de conversión analógico-digital (ADC)
 * 10 GPIO de detección capacitiva
