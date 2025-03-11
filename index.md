@@ -2,7 +2,7 @@
 layout: default
 ---
 
-#**Bienvenidos al curso!**
+# **Bienvenidos al curso!**
 
 Este sitio tiene como objetivo complementar las clases presenciales del curso. La idea es que sea un material de apoyo y consulta constante, tanto durante como después del curso. Antes de empezar, les recomiendo leer este fragmento.
 
@@ -15,9 +15,9 @@ El curso busca que aprendan a desarrollar y a diseñar circuitos con [sistemas e
 ![ESP32](./assets/img/01_intro.jpg)
 ![arduino](./assets/img/02_intro.jpg)
 ![platformio](./assets/img/03_intro.png)
-![componentes](./assets/img/04_intro.png)
+![vsc](./assets/img/04_intro.png)
 ![placa](./assets/img/05_intro.jpg)
-
+![componentes](./assets/img/06_intro.jpg)
 
 Aprendiendo a dominar estas herramientas, van a poder terminar el curso cumpliendo los siguientes objetivos:
 * Entender código, modificar código ya escrito y desarrollar código nuevo en Arduino IDE y en Visual Studio Code.
@@ -28,12 +28,12 @@ Aprendiendo a dominar estas herramientas, van a poder terminar el curso cumplien
   * Escribir el código que necesita la solución.
   * Armar el circuito que necesita la solución.
 
-##¿Qué necesitamos para empezar a llegar a los objetivos?
+## ¿Qué necesitamos para empezar a llegar a los objetivos?
 * Comenzar a planear proyectos escribiendo en palabras el problema y la solución propuesta.
 * Conocer qué es y cómo armar un diagrama en bloques.
 * Aprender a escribir código en Arduino IDE o en Visual Studio Code.
 
-##¿Y a partir de lo anterior, ¿cómo seguimos?
+## ¿Y a partir de lo anterior, ¿cómo seguimos?
 * No podemos sumarle cosas a nuestra placa de desarrollo si antes no conocemos que tiene por dentro, cómo controlamos eso y cómo lo programamos estando solo en un circuito.
 * Para saber que tiene dentro y como usamos eso, necesitamos saber programar.
 * Sabiendo programar , empezamos a sumar cosas a la placa con la que estemos trabajando (en nuestro caso, Arduino o ESP32).
