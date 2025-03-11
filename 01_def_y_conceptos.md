@@ -98,8 +98,8 @@ Para finalizar, probaremos que todo está correctamente instalado y configurado 
 
 El ESP32 no viene incluido en el IDE de Arduino por defecto, pero podemos agregarlo fácilmente utilizando el “Gestor de tarjetas”. Para esto, seguimos los siguientes pasos:
 
-* Abrir el _Arduino IDE_ e ir a _Archivo > Preferencias_. En el campo _URLs adicionales de gestor de tarjetas_, añade la siguiente URL: **https://espressif.github.io/arduino-esp32/package_esp32_index.json**
-* Luego, vamos a _Herramientas > Placa > Gestor de tarjetas_
+* Abrir el _Arduino IDE_ e ir a _Archivo > Preferencias_. En el campo _URLs adicionales de gestor de tarjetas_, añade la siguiente URL: **https://espressif.github.io/arduino-esp32/package_esp32_index.json**.
+* Luego, vamos a _Herramientas > Placa > Gestor de tarjetas_.
 * En el panel que aparece, buscamos _ESP32_ en la barra de búsqueda, y hacemos click en _Instalar_ en el paquete que aparece.
 * Una vez completada la instalación, ya podés elegir los modelos de ESP32 en el desplegable, y estarás listo para programar el _ESP32_.
 
