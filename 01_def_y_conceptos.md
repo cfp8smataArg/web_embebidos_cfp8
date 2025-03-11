@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 01_def_y_conceptos
-description: definiciones y conceptos relacionados con el curso
+title: Definiciones y conceptos generales
+description: Definiciones y conceptos relacionados con el curso. Terminos generales de los sistemas embebidos que ayudan a comprender de una forma integral el completo funcionamiento de estos dispositivos.
 ---
 
 # Definiciones y conceptos generales
@@ -579,4 +579,5 @@ Para que todo funcione, necesitamos dejar al ESP32 “respirar”. Para eso, ten
 * * *
 * * *
 [Ir al inicio](./index.html)
+
 [Ir al Desarrollo de circuitos](./02_desarrollo_de_circuitos.html)

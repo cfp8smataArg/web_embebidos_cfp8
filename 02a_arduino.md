@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 02a_arduino
-description: circuito y ejemplos para cada placa, separados por tema y por componente.
+title: Ejemplos con Arduino
+description: Circuitos y ejemplos, separados por tema y por componente.
 ---
 
 ## Desarrollo de circuitos - Arduino
