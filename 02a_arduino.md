@@ -105,7 +105,7 @@ El esquema de conexión visto desde el componente sería el siguiente:
 
 Mientras que el esquema de conexión visto desde Arduino quedaría así:
 
-![componentes](./assets/img/02_buzzer_arduino.jpg)
+![componentes](./assets/img/02_buzzer_arduino.JPG)
 
 Si queremos usar un altavoz, que consumen mayor corriente de la que puede proporcionar Arduino, tendremos que proporcionar una etapa de amplificación, con un componente llamado transistor. El transistor es como una “compuerta electrónica”, que permite, mediante una señal de baja potencia, controlar el paso de una señal de alta potencia.
 
@@ -289,9 +289,9 @@ La luz de fondo se controla principalmente por software desde el Arduino, pero e
 
 Para conectar con el módulo con el Arduino solo utilizamos los pines I2C del Arduino (SDA y SCL) y alimentación (GND y 5V), los pines I2C varían de acuerdo al modelo de Arduino con el que trabajemos, en la siguiente tabla podemos ver cuales son los pines I2C para cada modelo de Arduino.
 
-![componentes](./assets/img/11_i2c_arduino.jpg)
+![componentes](./assets/img/11_i2c_arduino.JPG)
 
-![componentes](./assets/img/12_i2c_arduino.jpg)
+![componentes](./assets/img/12_i2c_arduino.png)
 
 ### Librería LiquidCrystal_I2C para Arduino
 
