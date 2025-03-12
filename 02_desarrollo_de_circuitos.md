@@ -15,4 +15,4 @@ Esta sección muestra aplicaciones de distintos componentes y módulos electrón
 * * *
 [Ir al Definiciones y conceptos generales](./01_def_y_conceptos.html)
 
-[Ir al inicio](./03_anexos.html)
+[Ir a Anexos](./03_anexos.html)
