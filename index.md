@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# **Bienvenidos al curso!**
+# **Programador de sistemas embebidos**
 
 Este sitio tiene como objetivo complementar las clases presenciales del curso. La idea es que sea un material de apoyo y consulta constante, tanto durante como después del curso. Antes de empezar, les recomiendo leer este fragmento.
 
