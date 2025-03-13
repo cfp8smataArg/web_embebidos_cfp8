@@ -1,6 +1,7 @@
 title: Sistemas Robóticos - CFP Nº8
 description: Sitio web con material teórico - práctico sobre el curso. Cómo funcionan los sistemas embebidos, cómo se vinculan con la electrónica, cómo se programan y cómo se desarrollan.
 show_downloads: false
+is_project_page: false
 google_analytics:
 theme: jekyll-theme-cayman
 remote_theme: pages-themes/cayman@v0.2.0
