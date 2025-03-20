@@ -98,9 +98,12 @@ Para finalizar, probaremos que todo está correctamente instalado y configurado 
 
 El ESP32 no viene incluido en el IDE de Arduino por defecto, pero podemos agregarlo fácilmente utilizando el “Gestor de tarjetas”. Para esto, seguimos los siguientes pasos:
 
-* Abrir el _Arduino IDE_ e ir a _Archivo > Preferencias_. En el campo _URLs adicionales de gestor de tarjetas_, añade la siguiente URL: [https://espressif.github.io/arduino-esp32/package_esp32_index.json] https://espressif.github.io/arduino-esp32/package_esp32_index.json
+* Abrir el _Arduino IDE_ e ir a _Archivo > Preferencias_. En el campo _URLs adicionales de gestor de tarjetas_, añade la siguiente [https://espressif.github.io/arduino-esp32/package_esp32_index.json](https://espressif.github.io/arduino-esp32/package_esp32_index.json):
 * Luego, vamos a _Herramientas > Placa > Gestor de tarjetas_.
 * En el panel que aparece, buscamos _ESP32_ en la barra de búsqueda, y hacemos click en _Instalar_ en el paquete que aparece.
+
+![componentes](./assets/img/09b_1raParte.JPG)
+
 * Una vez completada la instalación, ya podés elegir los modelos de ESP32 en el desplegable, y estarás listo para programar el _ESP32_.
 
 ## Programar con **Visual Studio Code + Platformio IDE**
@@ -338,11 +341,11 @@ Un array char puede ser declarado de diversas maneras:
 
 ```cpp
 char polichori[10];
-char polichori[8]= {‘C’,’h’,’o’,’r’,’i’,’z’,’o’} ;
-char polichori[8]= {‘C’,’h’,’o’,’r’,’i’,’z’,’o’,’\0’} ;
-char polichori[]= “Chorizo”;
-char polichori[8]= “Chorizo”;
-char polichori[10]= “Chorizo”;
+char polichori[8]= {'C','h','o','r','i','z','o'} ;
+char polichori[8]= {'C','h','o','r','i','z','o','\0'} ;
+char polichori[]= 'Chorizo';
+char polichori[8]= 'Chorizo';
+char polichori[10]= 'Chorizo';
 ```
 
 En la primera línea creamos un array sin inicializar. En la segunda lo dimensionamos e inicializamos y el sistema añade automáticamente un carácter nulo (ASCII 0 ó **\0**) al final del array. En la tercera añadimos el carácter de fin de array explícitamente. En la cuarta línea el array se fracciona en caracteres individuales y se dimensiona automáticamente. En la quinta el array se fracciona automáticamente y en la sexta dejamos espacios libres al final del array para nuevos datos.
@@ -432,7 +435,7 @@ El Arduino, como todo componente, está conformado de distintas partes como son 
 
 EL ESP32 tiene un total de 25 GPIOs, de los cuales unos pocos pines son pines de entrada solamente.
 
-Pines de sólo entrada: **_GPIO 34, **_GPIO 35, **_GPIO 36 y **_GPIO 39.
+Pines de sólo entrada: **_GPIO 34_**, **_GPIO 35_**, **_GPIO 36_** y **_GPIO 39_**.
 
 No todos los pines tienen pullup de entrada, se necesita un pullup externo en estos pines cuando se usa como pullup de entrada.
 
