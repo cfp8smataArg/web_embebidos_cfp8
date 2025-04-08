@@ -2,6 +2,16 @@
 layout: default
 ---
 
+[Definiciones y conceptos generales](./01_def_y_conceptos.html).
+
+[Desarrollo de circuitos](./02_desarrollo_de_circuitos.html)
+
+[Sección circuitos con Arduino](./02a_arduino.html)
+
+[Sección circuitos con ESP32](./02b_esp32.html)
+
+[Anexos](./03_anexos.html)
+
 # **Programador de sistemas embebidos**
 
 Este sitio tiene como objetivo complementar las clases presenciales del curso. La idea es que sea un material de apoyo y consulta constante, tanto durante como después del curso. Antes de empezar, les recomiendo leer este fragmento.

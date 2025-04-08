@@ -4,6 +4,16 @@ title: Ejemplos con Arduino
 description: Circuitos y ejemplos, separados por tema y por componente.
 ---
 
+[Inicio](./index.html)
+
+[Definiciones y conceptos generales](./01_def_y_conceptos.html).
+
+[Desarrollo de circuitos](./02_desarrollo_de_circuitos.html)
+
+[Sección circuitos con ESP32](./02b_esp32.html)
+
+[Anexos](./03_anexos.html)
+
 # Desarrollo de circuitos - Arduino
 
 ## Puerto serie

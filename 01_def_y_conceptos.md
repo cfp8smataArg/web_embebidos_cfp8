@@ -4,6 +4,16 @@ title: Definiciones y conceptos generales
 description: Definiciones y conceptos relacionados con el curso. Terminos generales de los sistemas embebidos que ayudan a comprender de una forma integral el completo funcionamiento de estos dispositivos.
 ---
 
+[Inicio](./index.html)
+
+[Desarrollo de circuitos](./02_desarrollo_de_circuitos.html)
+
+[Sección circuitos con Arduino](./02a_arduino.html)
+
+[Sección circuitos con ESP32](./02b_esp32.html)
+
+[Anexos](./03_anexos.html)
+
 # Definiciones y conceptos generales
 
 ## ¿Qué es un sistema embebido?
@@ -401,6 +411,128 @@ La siguiente figura ilustra este concepto:
 ![componentes](./assets/img/25_1raParte.jpg)
 
 El valor de la variable **_varA_** puede ser accedido desde las funciones **_funciónA_**, **_funciónB_** y **_funciónC_** es decir, es una variable global. En cambio las variables **_varB_** y **_varC_** son variables locales. El valor de la variable **_varB_** sólo puede ser accedido desde las funciones **_funciónB_** y **_funciónC_**, mientras que la variable local **_varC_** sólo puede ser leída desde la función **_funciónC_**.
+
+## Variables y constantes
+
+Las estructuras de control en Arduino son similares a las que usan los lenguajes de programación más populares. Al programar en Arduino para realizar nuestros proyectos electrónicos se hace imprescindible utilizar estructuras de control para controlar las acciones de nuestros actuadores, por lo cual es necesario conocer que estructuras de control podemos utilizar para realizar alguna tarea en específico.
+
+## ESTRUCTURAS DE CONTROL CONDICIONALES
+Estas estructuras de control son básicamente para determinar si una condición es verdadera (true) o falsa (false), en caso que sea verdadera ejecutará una serie de instrucciones que le indiquemos, en caso de ser falso ejecutará otra acción pero esta condición no es obligatoria, podemos obviar esta instrucción en caso que no sea necesario para nuestro programa.
+
+### __*if*__
+
+Para utilizar esta estructura de control condicional usaremos la palabra reservada __*if*__ seguida de la condición que deseamos controlar delimitada por dos paréntesis.
+
+```cpp
+if(condición para ser evaluada)
+{
+// Instrucciones que se ejecutarán en caso que cumpla la condición if
+}
+```
+
+### __*else*__
+
+Cuando no cumple la condición que fue evaluada anteriormente y queremos realizar alguna acción se utiliza la palabra reservada __*else*__ para hacer notar al programa que debe ejecutar una serie de instrucciones para realizar alguna otra acción, esta condición no es obligatoria sólo es usada cuando es necesaria.
+
+```cpp
+else
+{
+	// Instrucciones que se ejecutaran en caso que no cumpla la condición if
+}
+```
+
+### __*if – else*__
+
+Muchas veces cuando queremos controlar muchas condiciones no es suficiente usar una condicional if, por lo cual podemos realizar lo que se conoce como anidamiento que consiste en declarar una condicional if dentro de otra condicional if de modo que podamos comprobar varias condiciones en nuestro programa.
+
+```cpp
+if(condición para ser evaluada)
+  {
+  // Instrucciones que se ejecutaran en caso que cumpla la condición if
+    if(condición para ser evaluada)
+    {
+        // Instrucciones que se ejecutaran en caso que cumpla la condición if
+    }
+    else 
+    {
+		    // Instrucciones que se ejecutaran en caso que no cumpla la condición if
+     }
+ }
+else {
+	// Instrucciones que se ejecutaran en caso que no cumpla la condición if
+    if(condición para ser evaluada)
+    {
+       // Instrucciones que se ejecutaran en caso que cumpla la condición if
+    }
+    else
+    {
+	// Instrucciones que se ejecutaran en caso que no cumpla la 
+        //condición if
+    }
+}
+```
+
+### __*switch*__
+
+Esta estructura de control condicional de Arduino es muy utilizada cuando queremos evaluar múltiples valores. Según el valor que tenga se ejecutará una instrucción distinta, si bien podemos utilizar un anudamiento de condicionales if esto hará que nuestro programa se ejecute con un retardo mayor. Para utilizar esta condicional usamos la palabra reservada “switch” junto a la expresión que será evaluada delimitada por paréntesis. Al ser evaluada esta expresión determina que caso tomará y ejecutará las instrucciones que le hayamos declarado.
+
+```cpp
+switch (expresión) 
+{
+  case valor1:
+          //sentencias si la expresión es igual al valor1;
+  break
+  case valor2:
+          // sentencias si la expresión es igual al valor2;
+  break
+.
+.
+.
+  default:
+        //sentencias que se ejecutan si no se cumple ninguna
+        //de las anteriores
+}
+
+```
+
+## ESTRUCTURAS DE CONTROL REPETITIVAS O ITERATIVAS
+
+El framework de Arduino nos da la posibilidad, al igual que muchos otros lenguajes de programación, de utilizar varias opciones para trabajar con bucles como son el __*while*__, __*do-while*__ y el __*for*__.
+
+Trabajar con bucles implica que realizaremos una misma tarea varias veces por lo cual debemos utilizarlos con precaución y no provocar inconsistencias en nuestros programas porque debemos tener en cuenta que al margen del código estaremos trabajando con distintos dispositivos que quizás podríamos arruinar si no tomamos nuestras precauciones.
+
+### __*while*__
+Esta estructura de control repetitiva de Arduino agrupa un conjunto de instrucciones que solo es ejecutada en caso que cumpla una condición que es evaluada en cada iteración.
+
+Para trabajar con esta estructura de control es necesario declarar dentro de las instrucciones una variable que cambia constantemente y es evaluada para seguir o finalizar el bucle.
+
+Al estar el condicional al principio de la estructura de control esto hace que trabaje como si fuera una cerradura, es decir que si no cumple la condición en un principio jamás entrara a ejecutar ninguna instrucción.
+
+```cpp
+while (condición) {
+     // sentencias que se ejecutan si la condición es true
+}
+```
+
+### __*do-while*__
+Esta estructura de control repetitiva trabaja de manera similar a la estructura de control while con la diferencia que la condición es evaluada al final de la estructura de control repetitiva y no al principio como lo hace la estructura de control while. Esto hace que por lo menos en una ocasión ejecutará las instrucciones que tenga dentro de esta estructura. Esta forma de control es muy útil cuando deseamos trabajar con menús de selección e imprimirlas en una pantalla LCD otorgándole al usuario varias opciones para trabajar.
+
+```cpp
+do {
+     // Instrucciones
+} while (condición)
+```
+
+### __*for*__
+Esta estructura de control repetitiva o iterativa de Arduino nos da la posibilidad de inicializar una variable para la condición, evaluar la condición y realizar un incremento o decremento en una sola expresión, dándonos una mejor compresión sobre el control que realizará esta estructura de control repetitiva de Arduino. Además esta expresión se inicia al principio de la estructura por lo que si no cumple la condición jamás entrará a ejecutar ninguna instrucción.
+
+```cpp
+for( inicialización de la variable; condición a ser evaluada; incremento/decremento)
+{
+	// Instrucciones que se ejecutaran en caso que cumpla la condición.
+}
+
+```
 
 ## Puertos en Arduino
 
