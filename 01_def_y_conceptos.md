@@ -412,11 +412,10 @@ La siguiente figura ilustra este concepto:
 
 El valor de la variable **_varA_** puede ser accedido desde las funciones **_funciónA_**, **_funciónB_** y **_funciónC_** es decir, es una variable global. En cambio las variables **_varB_** y **_varC_** son variables locales. El valor de la variable **_varB_** sólo puede ser accedido desde las funciones **_funciónB_** y **_funciónC_**, mientras que la variable local **_varC_** sólo puede ser leída desde la función **_funciónC_**.
 
-## Variables y constantes
+## ESTRUCTURAS DE CONTROL CONDICIONALES
 
 Las estructuras de control en Arduino son similares a las que usan los lenguajes de programación más populares. Al programar en Arduino para realizar nuestros proyectos electrónicos se hace imprescindible utilizar estructuras de control para controlar las acciones de nuestros actuadores, por lo cual es necesario conocer que estructuras de control podemos utilizar para realizar alguna tarea en específico.
 
-## ESTRUCTURAS DE CONTROL CONDICIONALES
 Estas estructuras de control son básicamente para determinar si una condición es verdadera (true) o falsa (false), en caso que sea verdadera ejecutará una serie de instrucciones que le indiquemos, en caso de ser falso ejecutará otra acción pero esta condición no es obligatoria, podemos obviar esta instrucción en caso que no sea necesario para nuestro programa.
 
 ### __*if*__
