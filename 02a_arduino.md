@@ -105,6 +105,39 @@ Si lo que queremos es tener el LED siempre encendido y que sólo se apague cuand
 
 ![componentes](./assets/img/03_pulsador_arduino.png)
 
+## PWM y analogWrite()
+
+Esta instrucción sirve para escribir un pseudo-valor analógico utilizando el procedimiento de modulación por ancho de pulso (PWM) a uno de los pin´s de Arduino marcados como “pin PWM”. El modelo Uno de Arduino, que implementa el chip ATmega168, permite habilitar como salidas analógicas tipo PWM los pines 3, 5, 6, 9, 10 y 11. Los modelos de Arduino más antiguos que implementan el chip ATmega8, solo tienen habilitadas para esta función los pines 9, 10 y 11. El valor que se puede enviar a estos pines de salida analógica puede darse en forma de variable o constante, pero siempre con un margen de 0-255.
+
+```cpp
+analogWrite(pin, VALOR); // ESCRIBE VALOR EN EL pin DEFINIDO COMO ANALÓGICO
+```
+
+Si enviamos el valor 0 genera una salida de 0 voltios en el pin especificado; un valor de 255 genera una salida de 5 voltios en el pin especificado. Para valores de entre 0 y 255, el pin saca tensiones entre 0 y 5 voltios - el valor HIGH de salida equivale a 5v (5 voltios). Teniendo en cuenta el concepto de señal PWM, por ejemplo, un valor de 64 equivaldrá a mantener 0 voltios tres cuartas partes del tiempo y 5 voltios a una cuarta parte del tiempo; un valor de 128 equivaldrá a mantener la salida en 0 la mitad del tiempo y 5 voltios la otra mitad del tiempo, y un valor de 192 equivaldrá a mantener en la salida 0 voltios una cuarta parte del tiempo y de 5 voltios tres cuartas partes del tiempo restante.
+
+Debido a que ésta es una función de hardware, en el pin de salida analógica (PWN) se generará una onda constante después de ejecutada la instrucción analogWrite hasta que se llegue a ejecutar otra instrucción analogWrite (o una llamada a digitalRead o digitalWrite en el mismo pin).
+
+El siguiente ejemplo lee un valor analógico de un pin de entrada analógica, convierte el valor dividiéndolo por 4, y envía el nuevo valor convertido a una salida del tipo PWM o salida analógica:
+
+```cpp
+int led = 10;
+int analog = 0;
+int valor;
+
+void setup() 
+{
+}
+
+void loop() 
+{
+  valor = analogRead(analog);
+  valor = valor/4;
+  analogWrite(led, valor);
+}
+```
+
+
+
 ## Buzzer
 
 Si usamos una de las placas comerciales para pequeños proyectos y hobbies, que incorporan la electrónica y terminales necesarios, la conexión con Arduino es realmente sencilla. Simplemente alimentamos el módulo conectando Vcc y GND a Arduino, y la entrada de señal a cualquier salida digital de Arduino.
